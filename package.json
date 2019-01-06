@@ -1,0 +1,27 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "This is my utils",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeedHuang/utils.git"
+  },
+  "keywords": [
+    "util"
+  ],
+  "author": "Seed Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeedHuang/utils/issues"
+  },
+  "homepage": "https://github.com/SeedHuang/utils#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.5"
+  }
+}
