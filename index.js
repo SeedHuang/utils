@@ -3,7 +3,8 @@ export function deepClone (obj) {
 };
 
 export function isNotNull (obj) {
-  return obj !== null || obj !== undefined;
+  debugger;
+  return obj !== null && obj !== undefined;
 }
 
 export function isNotEmpty (str) {

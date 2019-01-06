@@ -13,7 +13,9 @@ module.exports = (mode, env) => {
     },
     output: {
       filename: '[name].js',
-      path: path.resolve(__dirname, './lib')
+      path: path.resolve(__dirname, './lib'),
+      libraryTarget: 'cmd',
+      library: 'utils'
     },
     resolve: {
       extensions: ['.js']

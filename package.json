@@ -4,7 +4,8 @@
   "description": "This is my utils",
   "main": "lib/index.js",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "./node_modules/.bin/babel index.js --out-file ./lib/index.js",
+    "test": "npm run build | mocha --require @babel/register"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,11 @@
   },
   "homepage": "https://github.com/SeedHuang/utils#readme",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
-    "babel-loader": "^8.0.5"
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "mocha": "^5.2.0"
   }
 }
