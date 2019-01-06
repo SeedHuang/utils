@@ -18,11 +18,12 @@ module.exports = (mode, env) => {
     resolve: {
       extensions: ['.js']
     },
-    loader: {
+    module: {
       rules: [
         {
           test: /\.js/,
-          loader: 'babel-loader'
+          loader: 'babel-loader',
+          exclude: /\/node_modules/
         }
       ]
     }
