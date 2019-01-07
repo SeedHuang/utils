@@ -1,6 +1,6 @@
 {
   "name": "utils_seedhuang",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "This is my utils",
   "main": "lib/index.js",
   "scripts": {
@@ -28,5 +28,6 @@
     "@babel/register": "^7.0.0",
     "babel-loader": "^8.0.5",
     "mocha": "^5.2.0"
-  }
+  },
+  "sideEffects": false
 }
