@@ -1,6 +1,6 @@
 const myName = "My Name Seed Huang"
 
-export function deepClone (obj) {
+export function cloneDeep (obj) {
   return JSON.parse(JSON.stringify(obj));
 };
 
@@ -19,8 +19,4 @@ export function createAPerson (str) {
   return new Person();
 }
 
-function ThisA () {
-  alert(myName);
-}
-
-ThisA();
+cloneDeep({a:1});
