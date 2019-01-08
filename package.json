@@ -3,8 +3,9 @@
   "version": "1.0.10",
   "description": "This is my utils",
   "main": "lib/index.js",
+  "module": "lib/index.es.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel src --out-dir ./lib",
+    "build": "./node_modules/.bin/babel src -d lib --copy-files",
     "test": "npm run build | mocha --require @babel/register"
   },
   "repository": {

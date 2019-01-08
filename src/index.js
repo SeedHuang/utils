@@ -1,18 +1,26 @@
-import Person from './Person';
+const myName = "My Name Seed Huang"
 
 export function deepClone (obj) {
   return JSON.parse(JSON.stringify(obj));
 };
 
 export function isNotNull (obj) {
-  debugger;
+  console.log("this is not null");
   return obj !== null && obj !== undefined;
 }
 
 export function isNotEmpty (str) {
+  console.log("is not empty");
   return isNotNull(str) && str !== '';
 }
 
 export function createAPerson (str) {
+  console.log("this is create A Person");
   return new Person();
 }
+
+function ThisA () {
+  alert(myName);
+}
+
+ThisA();
